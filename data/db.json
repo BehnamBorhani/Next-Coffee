@@ -17,7 +17,6 @@
       "off": 0
     }
   ],
-
   "services": [
     {
       "id": 1,
@@ -48,7 +47,6 @@
       "icon": "faTable"
     }
   ],
-
   "newsLetters": [
     {
       "id": 1,
@@ -57,9 +55,16 @@
     {
       "id": 2,
       "email": "qadir@gmail.com"
+    },
+    {
+      "email": "ali@gmail.com",
+      "id": 3
+    },
+    {
+      "email": "mmd@gmail.com",
+      "id": 4
     }
   ],
-
   "comment": [
     {
       "id": 1,
@@ -68,7 +73,6 @@
       "productID": 1,
       "score": 5
     },
-
     {
       "id": 2,
       "username": "Amin_Saeedi",
