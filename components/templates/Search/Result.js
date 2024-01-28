@@ -3,11 +3,11 @@ import React from "react";
 
 function Result({ searchResult }) {
   return (
-    <div class="container-fluid pt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="mb-5">Hot Coffee</h1>
+    <div className="container-fluid pt-5">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6">
+            <h1 className="mb-5">Hot Coffee</h1>
             {/*  */}
             {searchResult
               .filter((item) => item.type === "hot")
@@ -16,8 +16,8 @@ function Result({ searchResult }) {
                 <Card {...item} key={item.id} />
               ))}
           </div>
-          <div class="col-lg-6">
-            <h1 class="mb-5">Cold Coffee</h1>
+          <div className="col-lg-6">
+            <h1 className="mb-5">Cold Coffee</h1>
 
             {searchResult
               .filter((item) => item.type === "cold")
