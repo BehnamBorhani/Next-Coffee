@@ -19,11 +19,15 @@ const ProductsDetails = ({ data }) => {
         <h4 className="text-white mb-3">{data.title}</h4>
         <hr style={{ borderColor: "white" }} />
         <div className={styles.stars}>
-          {new Array(Math.trunc(data.score)).fill().map(() => (
-            <FontAwesomeIcon className={styles.fill_star} icon={faStar} />
+          {new Array(Math.trunc(data.score)).fill().map((item, index) => (
+            <FontAwesomeIcon
+              className={styles.fill_star}
+              icon={faStar}
+              key={index}
+            />
           ))}
-          {new Array(5 - Math.trunc(data.score)).fill().map(() => (
-            <FontAwesomeIcon icon={faStar} />
+          {new Array(5 - Math.trunc(data.score)).fill().map((item, index) => (
+            <FontAwesomeIcon icon={faStar} key={index} />
           ))}
         </div>
         <div className={styles.price_details}>

@@ -1,4 +1,10 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMapMarkerAlt,
+  faPhoneAlt,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 function ContactDetails() {
   const [username, setUsername] = useState("");
@@ -47,17 +53,26 @@ function ContactDetails() {
         </div>
         <div className="row px-3 pb-2">
           <div className="col-sm-4 text-center mb-3">
-            <i className="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
+            <FontAwesomeIcon
+              icon={faMapMarkerAlt}
+              className="fa-2x mb-3 text-primary"
+            />
             <h4 className="font-weight-bold">Address</h4>
             <p>123 Street, New York, USA</p>
           </div>
           <div className="col-sm-4 text-center mb-3">
-            <i className="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
+            <FontAwesomeIcon
+              icon={faPhoneAlt}
+              className="fa-2x mb-3 text-primary"
+            />
             <h4 className="font-weight-bold">Phone</h4>
             <p>+012 345 6789</p>
           </div>
           <div className="col-sm-4 text-center mb-3">
-            <i className="far fa-2x fa-envelope mb-3 text-primary"></i>
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="fa-2x mb-3 text-primary"
+            />
             <h4 className="font-weight-bold">Email</h4>
             <p>info@example.com</p>
           </div>

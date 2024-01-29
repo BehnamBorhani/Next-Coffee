@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 function Reservation() {
   return (
@@ -19,16 +21,25 @@ function Reservation() {
                 </p>
                 <ul className="list-inline text-white m-0">
                   <li className="py-2">
-                    <i className="fa fa-check text-primary mr-3"></i>Lorem ipsum
-                    dolor sit amet
+                    <FontAwesomeIcon
+                      icon={faCheck}
+                      className="text-primary mr-3"
+                    />
+                    Lorem ipsum dolor sit amet
                   </li>
                   <li className="py-2">
-                    <i className="fa fa-check text-primary mr-3"></i>Lorem ipsum
-                    dolor sit amet
+                    <FontAwesomeIcon
+                      icon={faCheck}
+                      className="text-primary mr-3"
+                    />
+                    Lorem ipsum dolor sit amet
                   </li>
                   <li className="py-2">
-                    <i className="fa fa-check text-primary mr-3"></i>Lorem ipsum
-                    dolor sit amet
+                    <FontAwesomeIcon
+                      icon={faCheck}
+                      className="text-primary mr-3"
+                    />
+                    Lorem ipsum dolor sit amet
                   </li>
                 </ul>
               </div>
@@ -82,8 +93,8 @@ function Reservation() {
                     <select
                       className="custom-select bg-transparent border-primary px-4"
                       style={{ height: "49px" }}
+                      defaultValue="1"
                     >
-                      <option selected="">Person</option>
                       <option value="1">Person 1</option>
                       <option value="2">Person 2</option>
                       <option value="3">Person 3</option>

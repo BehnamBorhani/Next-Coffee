@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 function Story() {
   return (
@@ -51,16 +53,16 @@ function Story() {
               dolor
             </p>
             <h5 className="mb-3">
-              <i className="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor
-              sit amet
+              <FontAwesomeIcon icon={faCheck} className="text-primary mr-3" />
+              Lorem ipsum dolor sit amet
             </h5>
             <h5 className="mb-3">
-              <i className="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor
-              sit amet
+              <FontAwesomeIcon icon={faCheck} className="text-primary mr-3" />
+              Lorem ipsum dolor sit amet
             </h5>
             <h5 className="mb-3">
-              <i className="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor
-              sit amet
+              <FontAwesomeIcon icon={faCheck} className="text-primary mr-3" />
+              Lorem ipsum dolor sit amet
             </h5>
             <a
               href=""

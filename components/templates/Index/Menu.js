@@ -2,8 +2,6 @@ import Card from "@/components/modules/Card/Card";
 import React from "react";
 
 function Menu({ data }) {
-  console.log("Menu =>", data);
-
   return (
     <div className="container-fluid pt-5">
       <div className="container">
@@ -24,7 +22,7 @@ function Menu({ data }) {
               .filter((item) => item.type === "hot")
               .slice(0, 3)
               .map((item) => (
-                <Card {...item} />
+                <Card {...item} key={item.id} />
               ))}
           </div>
 
@@ -34,7 +32,7 @@ function Menu({ data }) {
               .filter((item) => item.type === "cold")
               .slice(0, 3)
               .map((item) => (
-                <Card {...item} />
+                <Card {...item} key={item.id} />
               ))}
           </div>
         </div>
